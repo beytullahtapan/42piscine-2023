@@ -27,12 +27,3 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	}
 	return (dest);
 }
-
-#include <stdio.h>
-#include <stdlib.h>
-int main()
-{
-	char *str= "test";
-	char *dest = malloc(5);
-   printf("%s",ft_strncpy(dest,str,4));	
-}
