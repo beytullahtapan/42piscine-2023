@@ -14,28 +14,28 @@
 
 void	ft_print_comb(void)
 {
-	int	yuzler;
-	int	onlar;
-	int	birler;
+	int	a;
+	int	b;
+	int	c;
 
-	yuzler = '0';
-	while (yuzler <= '7')
+	c = '0';
+	while (c <= '7')
 	{
-		onlar = yuzler + 1;
-		while (onlar <= '8')
+		b = c + 1;
+		while (b <= '8')
 		{
-			birler = onlar + 1;
-			while (birler <= '9')
+			a = b + 1;
+			while (a <= '9')
 			{
-				write(1, &yuzler, 1);
-				write(1, &onlar, 1);
-				write(1, &birler, 1);
-				if (yuzler != '7')
+				write(1, &c, 1);
+				write(1, &b, 1);
+				write(1, &a, 1);
+				if (c != '7')
 					write(1, ", ", 2);
-				birler++;
+				a++;
 			}
-			onlar++;
+			b++;
 		}
-		yuzler++;
+		c++;
 	}
 }
